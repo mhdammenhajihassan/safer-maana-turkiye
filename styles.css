@@ -1,0 +1,361 @@
+/* Genel ayar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Başlık ve logo */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #50c8b8d5;
+    color: rgb(16, 16, 16);
+}
+
+.header-logo {
+    width: 40px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+}
+
+
+header nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end; /* وضع الروابط في نهاية الـheader */
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 5px 10px; /* تصغير الحشوة */
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+header nav a:hover {
+    background-color: #ffdd40;
+    color: #333;
+    transform: scale(1.1);
+}
+
+/* Ana içerik */
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+.main h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+h2{
+    margin:10px;
+}
+p{
+    margin-top: 10px;
+}
+/* Kart tasarımı */
+.card {
+    background-color: #50c8b8d5;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 30px;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+.card ul {
+    text-align: right;
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.card li {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* WhatsApp butonu */
+.whatsapp-button {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.whatsapp-button button {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.whatsapp-button button i {
+    margin-left: 8px;
+}
+
+/* Sosyal medya ikonları */
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    color: #333;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #25D366;
+}
+
+/* Sabit fotoğraf geçişi ve efekt */
+.card img {
+    transition: transform 0.5s ease-out, opacity 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Kartları üst üste veya yan yana yerleştirme */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 600px;
+}
+/* Odeme bölümü */
+.odeme {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.divider {
+    margin-top: 20px;
+    height: 1px;
+    background-color: #ddd;
+}
+
+/* WhatsApp butonu */
+.whatsapp-button1 {
+    display: inline-flex;
+    align-items: center;
+    background-color: #50a0ec; /* Renk ayarı */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gölge efekti */
+    margin-top: 10px;
+}
+
+.whatsapp-button1 i {
+    margin-left: 8px;
+    font-size: 1.2em;
+}
+
+/* Hover efekti */
+.whatsapp-button:hover {
+    background-color: #407bbd; /* Daha koyu bir mavi */
+    transform: scale(1.05);
+}
+
+#contact-us {
+    background-color: #f4f4f4; /* Light background */
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-us h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact-us p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+#contact-us form {
+    margin-top: 20px;
+}
+#contact-us .whatsapp-button{
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    
+
+}
+#contact-us .whatsapp-button button i {
+    margin-left: 8px;
+}
+
+
+#contact-us label {
+    font-size: 1em;
+    color: #333;
+    margin-top: 10px;
+    display: block;
+    text-align: right;
+}
+
+#contact-us input[type="text"],
+#contact-us input[type="email"],
+#contact-us textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.submit-button {
+    background-color: #50c8b8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.submit-button:hover {
+    background-color: #3da99a;
+}
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Social Icons in Footer */
+#footer-social-icons {
+    margin-top: 10px;
+}
+
+#footer-social-icons a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+#footer-social-icons a:hover {
+    color: #ffdd40; /* لون مميز عند التمرير */
+}
+
+/* Mobil uyumlu */
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .main h1 {
+        font-size: 28px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+    }
+}
+
+/* Tablet ve daha büyük ekranlar için (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cards-container {
+        flex-direction: row;
+    }
+}
+
+/* Büyük ekranlarda (1024px ve daha büyük) kartlar yan yana */
+@media (min-width: 1024px) {
+    .cards-container {
+        flex-direction: row;
+    }
+}

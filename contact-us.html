@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا</title>
+    <link rel="stylesheet" href="stylecontent.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</style>
+</head>
+<body>
+
+    <header>
+        <img src="logo1.png" alt="logo">
+        <nav>
+            <a href="home.html">الرئيسية</a>
+            <a href="about-us.html">من نحن</a>
+            <a href="contact-us.html">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <section id="contact-us">
+        <h1>تواصل معنا</h1>
+        <p>لديك استفسار أو تحتاج إلى المزيد من المعلومات؟ نحن هنا للمساعدة!</p>
+        <form action="submit-form.php" method="POST">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">الرسالة:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <button type="submit">إرسال</button>
+        </form>
+
+        <p>أو يمكنك التواصل معنا عبر:</p>
+        <p>📱 الهاتف:05056760647</p>
+        <p>📧 البريد الإلكتروني: mohammedkari@icloud.com</p>
+        <a href="https://wa.me/+905056760647" target="_blank" style="text-decoration: none;">
+            <button style="background-color: #25D366; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px;">
+                <i class="fab fa-whatsapp"></i> تواصل معنا عبر واتساب
+            </button>
+        <div id="social-icons"> 
+            <a href="https://www.instagram.com/agli_travrel_/profilecard/?igsh=dzR1b3o5MWFuc3Nv"><i class="fa-brands fa-instagram" style="color: #74C0FC;"></i></a>
+            <a href="https://snapchat.com/t/aiDgtggQ"><i class="fa-brands fa-snapchat" style="color: #FFD43B;"></i></a>
+            <a href="https://www.tiktok.com/@muhammedyusfkara2?_t=8rFe6vpu398&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </section>
+    <footer>
+        <p>جميع الحقوق محفوظة © 2024 - شركتنا</p>
+        <div id="footer-social-icons">
+            <a href="https://www.instagram.com/agli_travrel_/profilecard/?igsh=dzR1b3o5MWFuc3Nv"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://snapchat.com/t/aiDgtggQ"><i class="fa-brands fa-snapchat"></i></a>
+            <a href="https://www.tiktok.com/@muhammedyusfkara2?_t=8rFe6vpu398&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,398 @@
+/* Genel Ayarlar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #50c8b8d5;
+    color: #101010;
+}
+
+.header-logo {
+    width: 40px;
+    height: auto;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+header nav a:hover {
+    background-color: #ffdd40;
+    color: #333;
+    transform: scale(1.1);
+}
+
+/* Kartlar İçin Ana Konteyner */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Kart Stili */
+.card {
+    background-color: #50c8b8d5;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.card p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* WhatsApp Butonu */
+.whatsapp-button button {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button button i {
+    margin-left: 8px;
+}
+
+.whatsapp-button button:hover {
+    background-color: #1ebe5d;
+}
+
+/* Sosyal Medya Iconları */
+#social-icons, #footer-social-icons {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#social-icons a, #footer-social-icons a {
+    margin: 0 15px;
+    color: #333;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+#social-icons a:hover, #footer-social-icons a:hover {
+    color: #25D366;
+}
+#footer-social-icons a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+/* Odeme bölümü */
+.odeme {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.divider {
+    margin-top: 20px;
+    height: 1px;
+    background-color: #ddd;
+}
+
+/* WhatsApp butonu */
+.whatsapp-button1 {
+    display: inline-flex;
+    align-items: center;
+    background-color: #50a0ec; /* Renk ayarı */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gölge efekti */
+    margin-top: 10px;
+}
+
+.whatsapp-button1 i {
+    margin-left: 8px;
+    font-size: 1.2em;
+}
+
+/* Hover efekti */
+.whatsapp-button:hover {
+    background-color: #407bbd; /* Daha koyu bir mavi */
+    transform: scale(1.05);
+}
+/* Telefonlara uyumlu tasarım için medya sorguları */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    header nav a {
+        font-size: 1em;
+        margin-left: 0;
+        padding: 8px;
+    }
+
+    /* Kartlar için düzenleme */
+    .cards-container {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .card h2 {
+        font-size: 1.3em;
+    }
+
+    /* WhatsApp Butonu */
+    .whatsapp-button button {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    /* Sosyal Medya İkonları */
+    #social-icons a, #footer-social-icons a {
+        font-size: 25px;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Header Logo */
+    .header-logo {
+        width: 30px;
+    }
+
+    /* Kartlar daha küçük olacak şekilde */
+    .card {
+        width: 90%;
+    }
+
+    .card h2 {
+        font-size: 1.2em;
+    }
+
+    .whatsapp-button button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* Sosyal medya ikonları daha küçük */
+    #social-icons a, #footer-social-icons a {
+        font-size: 20px;
+    }
+}
+
+/* قسم من نحن */
+#about-us {
+    position: relative;
+    padding: 200px 100px;
+    text-align: center;
+    background: url("wallpaper\ anime.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
+    max-width: 100%;
+    color: #ffffff; /* لون النص */
+    margin: 10px;
+}
+
+#about-us h1, p, h2 {
+    margin: 10px;
+}
+
+#about-us h1,
+#about-us p,
+#about-us h2 {
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+#about-us h1::before,
+#about-us p::before,
+#about-us h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* لون شفاف */
+    filter: blur(8px); /* مقدار التمويه */
+    border-radius: 4px;
+    z-index: -1;
+}
+
+/* İletişim Bölümü */
+#contact-us {
+    background-color: #f4f4f4; /* Light background */
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-us h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact-us p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+#contact-us form {
+    margin-top: 20px;
+}
+
+#contact-us label {
+    font-size: 1em;
+    color: #333;
+    margin-top: 10px;
+    display: block;
+    text-align: right;
+}
+
+#contact-us input[type="text"],
+#contact-us input[type="email"],
+#contact-us textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.submit-button {
+    background-color: #50c8b8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #3da99a;
+}
+
+/* WhatsApp Button */
+#contact-us.whatsapp-link {
+    text-decoration: none;
+}
+
+#contact-us .whatsapp-button {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+#contact-us.whatsapp-button i {
+    margin-left: 8px;
+    font-size: 1.2em;
+}
+
+#contact-us.whatsapp-button:hover {
+    background-color: #1ebe5d;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 1em;
+}
+
+footer p {
+    margin: 0;
+}

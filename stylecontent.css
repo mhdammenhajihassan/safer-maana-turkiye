@@ -1,0 +1,230 @@
+/* Header */
+/* Header */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* بدأ من اليمين */
+    padding: 5px 10px;
+    background-color: #50c8b8d5;
+    color: rgb(16, 16, 16);
+    direction: rtl; /* اتجاه الكتابة من اليمين لليسار */
+}
+
+.header-logo {
+        width: 10px; /* حجم أصغر للشعار */
+    height: auto;
+    margin-left: 15px; /* مسافة صغيرة بين الشعار والعناصر الأخرى */
+}
+
+header nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end; /* وضع الروابط في نهاية الـheader */
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 5px 10px; /* تصغير الحشوة */
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+header nav a:hover {
+    background-color: #ffdd40;
+    color: #333;
+    transform: scale(1.1);
+}
+
+/* Contact Us Section */
+#contact-us {
+    background-color: #f4f4f4; /* Light background */
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-us h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact-us p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+#contact-us form {
+    margin-top: 20px;
+}
+
+#contact-us label {
+    font-size: 1em;
+    color: #333;
+    margin-top: 10px;
+    display: block;
+    text-align: right;
+}
+
+#contact-us input[type="text"],
+#contact-us input[type="email"],
+#contact-us textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.submit-button {
+    background-color: #50c8b8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #3da99a;
+}
+
+/* WhatsApp Button */
+.whatsapp-link {
+    text-decoration: none;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button i {
+    margin-left: 8px;
+    font-size: 1.2em;
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe5d;
+}
+#content-us .social-icons{
+    display: inline-block;
+    margin-top: 20px;
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Social Icons in Footer */
+#footer-social-icons {
+    margin-top: 10px;
+}
+
+#footer-social-icons a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+#footer-social-icons a:hover {
+    color: #ffdd40; /* لون مميز عند التمرير */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-logo {
+        width: 30px; /* Smaller logo for mobile */
+        height: 30px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    header nav a {
+        margin: 5px 0; /* Reduced margin for better spacing on mobile */
+        font-size: 0.85em; /* Smaller font size for mobile */
+    }
+    
+    #contact-us {
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+
+    #contact-us h1 {
+        font-size: 1.5em; /* Smaller font size for mobile */
+    }
+}
+.social-icons{
+    margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+    header nav a {
+        font-size: 0.8em; /* Even smaller font size for very small screens */
+    }
+
+    .whatsapp-button {
+        font-size: 14px; /* Adjust button font size for mobile */
+        padding: 8px 16px;
+    }
+
+    .whatsapp-button i {
+        font-size: 1em; /* Smaller icon size */
+    }
+}
